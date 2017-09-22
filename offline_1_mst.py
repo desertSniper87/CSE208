@@ -7,8 +7,8 @@ def prim(graph):
     mst = defaultdict(dict)
     weights = {}
 
-    # for i in graph:
-        # mst[i] = []
+    for i in graph:
+        mst[i] = []
 
         # if ( graph[i]!={} ):
             # min_weight = sys.maxsize
@@ -20,6 +20,7 @@ def prim(graph):
                     # min_key = key
             # mst[i].append(min_key)
             # weights[i, min_key] = min_weight
+        # # visited.append(i)
 
         # enqueue edges connected to s in PQ (by inc weight)
         # while (!PQ.isEmpty)
@@ -65,12 +66,6 @@ def prim(graph):
                 front.remove(n)
             elif set(visited)>set(x):
                 front.remove(y)
-
-                            
-
-
-
-
 
     return mst, weights
 
