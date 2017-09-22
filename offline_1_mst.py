@@ -6,10 +6,9 @@ import sys
 def prim(graph):
     mst = defaultdict(dict)
     weights = {}
-    # visited = []
 
-    for i in graph:
-        mst[i] = []
+    # for i in graph:
+        # mst[i] = []
 
         # if ( graph[i]!={} ):
             # min_weight = sys.maxsize
@@ -21,7 +20,6 @@ def prim(graph):
                     # min_key = key
             # mst[i].append(min_key)
             # weights[i, min_key] = min_weight
-        # # visited.append(i)
 
         # enqueue edges connected to s in PQ (by inc weight)
         # while (!PQ.isEmpty)
@@ -49,8 +47,6 @@ def prim(graph):
             visited.append(min_key)
         if n not in visited:
             visited.append(n)
-        # if min_key not in visited:
-            # visited.append(min_key)
 
         for y in front:
             x = [x for x in graph[y]]
@@ -58,7 +54,6 @@ def prim(graph):
             # print("front:", front)
             if not x:
                 min_weight = sys.maxsize
-                # print (n)
                 for i in graph:
                     if n in graph[i]:
                         if graph[i][n] < min_weight:
@@ -68,26 +63,14 @@ def prim(graph):
                     mst[key].append(i)
                     weights[key, i] = min_weight
                 front.remove(n)
-                # print("x:", x, "n", n, "visited", visited)
-            # elif x in visited:
             elif set(visited)>set(x):
-                # print("n: ",n , "y: ", y,  "x:", x, "visited", visited)
-                # print("front:", front)
                 front.remove(y)
-        # else:
-            # print("x:", x, "n", n, "visited", visited)
 
-        # print ( front )
                             
 
 
-        # print(visited)
 
-        # front.remove(n)
 
-    # print(visited)
-    # for i in graph:
-        # if i not in visited:
 
     return mst, weights
 
@@ -110,13 +93,10 @@ if __name__ == '__main__':
         graph[int(line[0])][int(line[1])] = int(line[2])
 
     mst, weights = prim(graph)
-    # print(mst)
     for x in mst:
         for y in mst[x]:
             print (x, " ", y)
-    # print(weights)
     sum = 0
     for x in weights:
-        # print(x)
         sum += weights[x]
     print(sum)
