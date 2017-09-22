@@ -51,21 +51,22 @@ def prim(graph):
 
         for y in front:
             x = [x for x in graph[y]]
+            if set(visited)>set(x):
+                front.remove(y)
             # print("n: ",n , "y: ", y,  "x:", x, "visited", visited)
             # print("front:", front)
-            if not x:
-                min_weight = sys.maxsize
-                for i in graph:
-                    if n in graph[i]:
-                        if graph[i][n] < min_weight:
-                            key = i
-                            min_weight = graph[i][n]
-                if (key not in visited and min_weight!=sys.maxsize):
-                    mst[key].append(i)
-                    weights[key, i] = min_weight
-                front.remove(n)
-            elif set(visited)>set(x):
-                front.remove(y)
+            # if not x:
+                # min_weight = sys.maxsize
+                # for i in graph:
+                    # if n in graph[i]:
+                        # if graph[i][n] < min_weight:
+                            # key = i
+                            # min_weight = graph[i][n]
+                # if (key not in visited and min_weight!=sys.maxsize):
+                    # mst[key].append(i)
+                    # weights[key, i] = min_weight
+                # front.remove(n)
+            # elif set(visited)>set(x):
 
     return mst, weights
 
@@ -73,7 +74,8 @@ def prim(graph):
 
 
 if __name__ == '__main__':
-    f = open('input_offline_1.txt')
+    # f = open('offline_1_input_1.txt')
+    f = open('offline_1_input_2_cp_4.14.txt')
 
     num_of_vert = int(f.readline())
     num_of_edge = int(f.readline())
@@ -86,6 +88,7 @@ if __name__ == '__main__':
     for _ in range(0, num_of_edge):
         line = f.readline().rstrip().split(" ")
         graph[int(line[0])][int(line[1])] = int(line[2])
+        graph[int(line[1])][int(line[0])] = int(line[2])
 
     mst, weights = prim(graph)
     for x in mst:
