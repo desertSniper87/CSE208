@@ -88,6 +88,7 @@ if __name__ == '__main__':
         graph[int(line[1])][int(line[0])] = int(line[2])
 
     mst, weights = prim(graph)
+    # print(mst)
     for x in mst:
         for y in mst[x]:
             print (x, " ", y)

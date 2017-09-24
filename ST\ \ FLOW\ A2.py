@@ -32,7 +32,7 @@ def kruskal_sbmst(weights, num_of_vert):
 
 if __name__ == '__main__':
     # f = open('offline_1_input_1.txt')
-    f = open('ST  FLOW A1.input.txt')
+    f = open('ST  FLOW A2.input.txt')
 
     num_of_vert = int(f.readline())
     num_of_edge = int(f.readline())
@@ -46,6 +46,13 @@ if __name__ == '__main__':
         graph[int(line[0])][int(line[1])] = int(line[2])
         graph[int(line[1])][int(line[0])] = int(line[2])
 
+    num_of_cons = int(f.readline())
+    cons = []
+    for _ in range(num_of_cons):
+        line = f.readline().rstrip().split(" ")
+        cons.append(int(line[0]), [int(line[1])])
+        
+    print(cons)
     weights = {}
     
     # print(graph)
