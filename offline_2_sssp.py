@@ -20,8 +20,9 @@ def bellman_ford(graph, source, num_of_vert, num_of_edge):
                     d[v] = d[u] + graph[u][v]
                     pi[v] = u
 
-    print(d)
-    print(pi)
+    print('{:>12}  {:>12}  {:>12}'.format('V', 'Distance', 'Parent'))
+    for i in graph:
+        print('{:>12}  {:>12}  {:>12}'.format(str(i), str(d[i]), str(pi[i])))
 
     for u in graph:
         for v in graph[u]:
@@ -32,17 +33,18 @@ def bellman_ford(graph, source, num_of_vert, num_of_edge):
 
 
 if __name__ == '__main__':
-    f = open('offline_2_input.txt')
-    # f = open('offline_2_input_2.txt')
+    # f = open('offline_2_input.txt')
+    f = open('offline_2_input_2.txt')
 
     num_of_tests = int(f.readline())
+    index_start = int(f.readline())
 
     while(num_of_tests):
         num_of_vert = int(f.readline())
         num_of_edge = int(f.readline())
 
         graph = defaultdict(dict)
-        for i in range(1, num_of_vert + 1):
+        for i in range(index_start, num_of_vert + index_start):
             graph[i] = {}
 
         for _ in range(0, num_of_edge):
@@ -50,6 +52,12 @@ if __name__ == '__main__':
             graph[int(line[0])][int(line[1])] = float(line[2])
 
         # print(graph)
+
+        for u in graph:
+            for v in graph[u]:
+                print(u, " ", v, " ", graph[u][v])
+        print()
+
         print("Source?")
         source = int(input())
         bellman_ford(graph, source, num_of_vert, num_of_edge)
