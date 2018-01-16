@@ -1,4 +1,5 @@
 import random
+import resource, sys
 
 def rand_median(array):
     """ Dasgupta et al page 57 """
@@ -33,21 +34,31 @@ def partition(array, low, high):
 
     """
     pivot = array[low]
-    i = low - 1
-    j = high + 1
-    
-    while(True):
-        i = i + 1
-        while (array[i]<pivot):
-            j = j - 1
-            while(array[j]>pivot):
-                if i>=j:
-                    return j
-                
-                temp = array[j]
-                array[j] = array[i]
-                array[i] = temp
+    i = low + 1
+    j = high
 
+    done = False
+    
+    while not done:
+        while (i<=j and array[i]<=pivot):
+            j = j - 1
+        while(array[j]>pivot and j>=i):
+            j = j-1
+        if (j<i):
+            done=True
+        else:
+            temp = array[j]
+            array[j] = array[i]
+            array[i] = temp
+
+        temp = array[low]
+        array[low] = array[j]
+        array[j] = temp 
+
+        return j
+
+def findquicksort(array, med):
+    array = quicksort(array, 0, med)
 
 def quicksort(array, low, high):
     """TODO: Docstring for quicksort.
@@ -59,13 +70,19 @@ def quicksort(array, low, high):
     :returns: TODO
 
     """
+    print(array, low, high)
     if low<high :
         p = partition(array, low, high)
-        quicksort(array, low, high)
-        quicksort(A, p+1, high)
+        array = quicksort(array, low, high-1)
+        array = quicksort(array, p+1, high)
+
+    return array
    
 
 if __name__ == '__main__':
+    resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
+    sys.setrecursionlimit(10**6) 
+
     f = open('offline_5_input.txt')
     num_of_tests = int(f.readline())
     for _ in range(num_of_tests):
@@ -76,31 +93,9 @@ if __name__ == '__main__':
             array.append(int(i))
         # print(array)
         median = rand_median(array)
+        median = median[0]
 
-        print(median)
+        # print(median)
+        res_arr = findquicksort(array, median)
+        print(res_arr)
 
-    # while (num_of_tests):
-        # match    = int(line[2])
-        # mismatch = int(line[3])
-        # gap      = int(line[4])
-        # seq1     = f.readline().rstrip()
-        # seq2     = f.readline().rstrip()
-
-        # rows = len(seq1) + 1
-        # cols = len(seq2) + 1
-
-        # score_matrix, start_pos = create_score_matrix(rows, cols)
-
-        # seq1_aligned, seq2_aligned = traceback(score_matrix, start_pos)
-
-        # alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)
-        # alength = len(seq1_aligned)
-        # print_matrix(score_matrix)
-        # print()
-        # print(seq1_aligned)
-        # print(alignment_str)
-        # print(seq2_aligned)
-        # print()
-
-
-        # num_of_tests = num_of_tests - 1
