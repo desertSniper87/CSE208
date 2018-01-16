@@ -40,6 +40,7 @@ def partition(array, low, high):
     done = False
     
     while not done:
+        print(array)
         while (i<=j and array[i]<=pivot):
             j = j - 1
         while(array[j]>pivot and j>=i):
@@ -57,8 +58,9 @@ def partition(array, low, high):
 
         return j
 
-def findquicksort(array, med):
-    array = quicksort(array, 0, med)
+def findquicksort(array, high):
+    print(array)
+    array = quicksort(array, 0, high)
 
 def quicksort(array, low, high):
     """TODO: Docstring for quicksort.
@@ -75,8 +77,9 @@ def quicksort(array, low, high):
         p = partition(array, low, high)
         array = quicksort(array, low, high-1)
         array = quicksort(array, p+1, high)
+    print(array)
 
-    return array
+    # return array
    
 
 if __name__ == '__main__':
@@ -91,11 +94,13 @@ if __name__ == '__main__':
         array = []
         for i in line:
             array.append(int(i))
-        # print(array)
-        median = rand_median(array)
-        median = median[0]
+        print(array)
+        # median = rand_median(array)
+        # median = median[0]
 
         # print(median)
-        res_arr = findquicksort(array, median)
-        print(res_arr)
+        # median = 9
+        # res_arr = findquicksort(array, median)
+        findquicksort(array, len(array)-1)
+        print(array)
 

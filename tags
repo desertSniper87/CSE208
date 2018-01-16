@@ -37,7 +37,7 @@ f	offline_2_sssp_online.py	/^    f = open('offline_2_input_2.txt')$/;"	v
 f	offline_3_dp.py	/^    f = open('offline_3_input.txt')$/;"	v
 f	offline_3_dp_online.py	/^    f = open('offline_3_input.txt')$/;"	v
 f	offline_5_dnc.py	/^    f = open('offline_5_input.txt')$/;"	v
-findquicksort	offline_5_dnc.py	/^def findquicksort(array, med):$/;"	f
+findquicksort	offline_5_dnc.py	/^def findquicksort(array, high):$/;"	f
 gap	offline_3_dp.py	/^        gap      = int(line[4])$/;"	v
 gap	offline_3_dp_online.py	/^        gap      = int(line[4])$/;"	v
 gaps	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
@@ -75,8 +75,6 @@ line	offline_5_dnc.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 m	Offline_4_BB.py	/^    m = int(l[1])$/;"	v
 match	offline_3_dp.py	/^        match    = int(line[2])$/;"	v
 match	offline_3_dp_online.py	/^        match    = int(line[2])$/;"	v
-median	offline_5_dnc.py	/^        median = median[0]$/;"	v
-median	offline_5_dnc.py	/^        median = rand_median(array)$/;"	v
 min_edge	offline_2_sssp_online.py	/^                        min_edge = graph[u][v]$/;"	v
 min_edge	offline_2_sssp_online.py	/^            min_edge = 9999$/;"	v
 min_u	offline_2_sssp_online.py	/^                        min_u = u$/;"	v
@@ -126,7 +124,6 @@ print_matrix	offline_3_dp_online.py	/^def print_matrix(matrix):$/;"	f
 project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
 quicksort	offline_5_dnc.py	/^def quicksort(array, low, high):$/;"	f
 rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
-res_arr	offline_5_dnc.py	/^        res_arr = findquicksort(array, median)$/;"	v
 rows	offline_3_dp.py	/^        rows = len(seq1) + 1$/;"	v
 rows	offline_3_dp_online.py	/^        rows = len(seq1) + 1$/;"	v
 s	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
