@@ -33,33 +33,40 @@ def partition(array, low, high):
     :returns: TODO
 
     """
-    pivot = array[low]
+    new_array = array[low:high]
+    medians = rand_median(new_array)
+    print("Elements between low, high: ", new_array)
+    print("Medians: ", medians)
+    pivot = new_array[0]
+    # pivot = array[low]
+    print("Pivot:", pivot)
     i = low + 1
     j = high
 
     done = False
     
     while not done:
-        print(array)
+        # print(array)
         while (i<=j and array[i]<=pivot):
+            i = i + 1
+        while(array[j]>=pivot and j>=i):
             j = j - 1
-        while(array[j]>pivot and j>=i):
-            j = j-1
         if (j<i):
             done=True
         else:
-            temp = array[j]
-            array[j] = array[i]
-            array[i] = temp
+            temp = array[i]
+            array[i] = array[j]
+            array[j] = temp
 
-        temp = array[low]
-        array[low] = array[j]
-        array[j] = temp 
+    temp = array[low]
+    array[low] = array[j]
+    array[j] = temp 
 
-        return j
+    return j
 
 def findquicksort(array, high):
-    print(array)
+    # print(array)
+    # array = quicksort(array, high, len(array)-1)
     array = quicksort(array, 0, high)
 
 def quicksort(array, low, high):
@@ -75,16 +82,15 @@ def quicksort(array, low, high):
     print(array, low, high)
     if low<high :
         p = partition(array, low, high)
-        array = quicksort(array, low, high-1)
-        array = quicksort(array, p+1, high)
-    print(array)
+        quicksort(array, low, p-1)
+        quicksort(array, p+1, high)
 
     # return array
    
 
 if __name__ == '__main__':
-    resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
-    sys.setrecursionlimit(10**6) 
+    # resource.setrlimit(resource.RLIMIT_STACK, (2**29,-1))
+    # sys.setrecursionlimit(10**6) 
 
     f = open('offline_5_input.txt')
     num_of_tests = int(f.readline())
@@ -94,13 +100,13 @@ if __name__ == '__main__':
         array = []
         for i in line:
             array.append(int(i))
-        print(array)
-        # median = rand_median(array)
-        # median = median[0]
+        median = rand_median(array)
+        print("Unsorted array: ", array)
+        print("Medians: ", median)
+        median = array.index(median[0])
 
-        # print(median)
-        # median = 9
-        # res_arr = findquicksort(array, median)
         findquicksort(array, len(array)-1)
-        print(array)
+        # findquicksort(array, median)
+        print("Final Sorted array: ", array)
+        print("\n"*4)
 
