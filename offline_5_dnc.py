@@ -23,7 +23,46 @@ def rand_median(array):
     
     return median
 
+def partition(array, low, high):
+    """Hoare Partition scheme
 
+    :array: TODO
+    :low: TODO
+    :high: TODO
+    :returns: TODO
+
+    """
+    pivot = array[low]
+    i = low - 1
+    j = high + 1
+    
+    while(True):
+        i = i + 1
+        while (array[i]<pivot):
+            j = j - 1
+            while(array[j]>pivot):
+                if i>=j:
+                    return j
+                
+                temp = array[j]
+                array[j] = array[i]
+                array[i] = temp
+
+
+def quicksort(array, low, high):
+    """TODO: Docstring for quicksort.
+    Taken from Cormen/Wikipedia
+
+    :array: unsorted list
+    :low: TODO
+    :high: TODO
+    :returns: TODO
+
+    """
+    if low<high :
+        p = partition(array, low, high)
+        quicksort(array, low, high)
+        quicksort(A, p+1, high)
    
 
 if __name__ == '__main__':
@@ -37,6 +76,7 @@ if __name__ == '__main__':
             array.append(int(i))
         # print(array)
         median = rand_median(array)
+
         print(median)
 
     # while (num_of_tests):
