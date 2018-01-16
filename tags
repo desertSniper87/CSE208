@@ -1,0 +1,155 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/06f9fde0/
+a	Offline_4_BB.py	/^    a,b = greedy_approach(elem)$/;"	v
+alength	offline_3_dp.py	/^        alength = len(seq1_aligned)$/;"	v
+alength	offline_3_dp_online.py	/^        alength = len(seq1_aligned)$/;"	v
+alignment_str	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+alignment_str	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+alignment_string	offline_3_dp.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
+alignment_string	offline_3_dp_online.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
+array	offline_5_dnc.py	/^        array = []$/;"	v
+b	Offline_4_BB.py	/^    a,b = greedy_approach(elem)$/;"	v
+bellman_ford	offline_2_sssp.py	/^def bellman_ford(graph, source, num_of_vert, num_of_edge):$/;"	f
+bellman_ford	offline_2_sssp_online.py	/^def bellman_ford(graph, source, num_of_vert, num_of_edge):$/;"	f
+calc_score	offline_3_dp.py	/^def calc_score(matrix, x, y):$/;"	f
+calc_score	offline_3_dp_online.py	/^def calc_score(matrix, x, y):$/;"	f
+calc_score_lcs	offline_3_dp_online.py	/^def calc_score_lcs(matrix, x, y):$/;"	f
+cols	offline_3_dp.py	/^        cols = len(seq2) + 1$/;"	v
+cols	offline_3_dp_online.py	/^        cols = len(seq2) + 1$/;"	v
+cons	FLOW_A2.py	/^    cons = []$/;"	v
+create_score_matrix	offline_3_dp.py	/^def create_score_matrix(rows, cols):$/;"	f
+create_score_matrix	offline_3_dp_online.py	/^def create_score_matrix(rows, cols):$/;"	f
+create_score_matrix_lcs	offline_3_dp_online.py	/^def create_score_matrix_lcs(rows, cols):$/;"	f
+elem	Offline_4_BB.py	/^    elem = defaultdict(list)$/;"	v
+f	FLOW_A2.py	/^    f = open('FLOW_A2_INPUT.txt')$/;"	v
+f	Offline_4_BB.py	/^    f = open('offline_4_input.txt')$/;"	v
+f	ST  FLOW A1.py	/^    f = open('ST  FLOW A1.input.txt')$/;"	v
+f	ST  FLOW B1.py	/^    f = open('ST  FLOW A1.input.txt')$/;"	v
+f	offline_1_mst.py	/^    f = open('offline_1_input_2_cp_4.14.txt')$/;"	v
+f	offline_1_mst_online.py	/^    f = open('mst_input.txt')$/;"	v
+f	offline_2_sssp.py	/^    f = open('offline_2_input_2.txt')$/;"	v
+f	offline_2_sssp_online.py	/^    f = open('offline_2_input_2.txt')$/;"	v
+f	offline_3_dp.py	/^    f = open('offline_3_input.txt')$/;"	v
+f	offline_3_dp_online.py	/^    f = open('offline_3_input.txt')$/;"	v
+f	offline_5_dnc.py	/^    f = open('offline_5_input.txt')$/;"	v
+gap	offline_3_dp.py	/^        gap      = int(line[4])$/;"	v
+gap	offline_3_dp_online.py	/^        gap      = int(line[4])$/;"	v
+gaps	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+gaps	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+graph	FLOW_A2.py	/^    graph = defaultdict(dict)$/;"	v
+graph	ST  FLOW A1.py	/^    graph = defaultdict(dict)$/;"	v
+graph	ST  FLOW B1.py	/^    graph = defaultdict(dict)$/;"	v
+graph	offline_1_mst.py	/^    graph = defaultdict(dict)$/;"	v
+graph	offline_1_mst_online.py	/^    graph = defaultdict(dict)$/;"	v
+graph	offline_2_sssp.py	/^        graph = defaultdict(dict)$/;"	v
+graph	offline_2_sssp_online.py	/^        graph = defaultdict(dict)$/;"	v
+greedy_approach	Offline_4_BB.py	/^def greedy_approach(elem):$/;"	f
+i	Offline_4_BB.py	/^        i = i+1$/;"	v
+i	Offline_4_BB.py	/^    i = 0$/;"	v
+idents	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+idents	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+index_start	offline_2_sssp.py	/^    index_start = int(f.readline())$/;"	v
+index_start	offline_2_sssp_online.py	/^    index_start = int(f.readline())$/;"	v
+kruskal_sbmst	FLOW_A2.py	/^def kruskal_sbmst(weights, num_of_vert, cons):$/;"	f
+kruskal_sbmst	ST  FLOW A1.py	/^def kruskal_sbmst(weights, num_of_vert):$/;"	f
+l	Offline_4_BB.py	/^        l = [int(x) for x in l]$/;"	v
+l	Offline_4_BB.py	/^        l = line.rstrip().split(" ")$/;"	v
+l	Offline_4_BB.py	/^    l = line.rstrip().split(" ")$/;"	v
+lcs	offline_3_dp_online.py	/^def lcs(matrix, start_pos):$/;"	f
+line	FLOW_A2.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	Offline_4_BB.py	/^    line = f.readline()$/;"	v
+line	ST  FLOW A1.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_1_mst.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_1_mst_online.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_2_sssp.py	/^            line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_2_sssp_online.py	/^            line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_3_dp.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_3_dp_online.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_5_dnc.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+m	Offline_4_BB.py	/^    m = int(l[1])$/;"	v
+match	offline_3_dp.py	/^        match    = int(line[2])$/;"	v
+match	offline_3_dp_online.py	/^        match    = int(line[2])$/;"	v
+median	offline_5_dnc.py	/^        median = rand_median(array)$/;"	v
+min_edge	offline_2_sssp_online.py	/^                        min_edge = graph[u][v]$/;"	v
+min_edge	offline_2_sssp_online.py	/^            min_edge = 9999$/;"	v
+min_u	offline_2_sssp_online.py	/^                        min_u = u$/;"	v
+min_v	offline_2_sssp_online.py	/^                        min_v = v$/;"	v
+mismatch	offline_3_dp.py	/^        mismatch = int(line[3])$/;"	v
+mismatch	offline_3_dp_online.py	/^        mismatch = int(line[3])$/;"	v
+mismatches	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+mismatches	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
+mst	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
+mst	ST  FLOW A1.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert)$/;"	v
+mst	offline_1_mst.py	/^    mst, weights = prim(graph)$/;"	v
+mst	offline_1_mst_online.py	/^    mst, weights = prim(graph)$/;"	v
+n	Offline_4_BB.py	/^    n = int(l[0])$/;"	v
+n	offline_5_dnc.py	/^        n = int(f.readline())$/;"	v
+next_move	offline_3_dp.py	/^def next_move(score_matrix, x, y):$/;"	f
+next_move	offline_3_dp_online.py	/^def next_move(score_matrix, x, y):$/;"	f
+num_of_cons	FLOW_A2.py	/^    num_of_cons = int(f.readline())$/;"	v
+num_of_edge	FLOW_A2.py	/^    num_of_edge = int(f.readline())$/;"	v
+num_of_edge	ST  FLOW A1.py	/^    num_of_edge = int(f.readline())$/;"	v
+num_of_edge	ST  FLOW B1.py	/^    num_of_vert, num_of_edge = int(parts[0]), int(parts[1])$/;"	v
+num_of_edge	offline_1_mst.py	/^    num_of_edge = int(f.readline())$/;"	v
+num_of_edge	offline_1_mst_online.py	/^    num_of_edge = int(f.readline())$/;"	v
+num_of_edge	offline_2_sssp.py	/^        num_of_edge = int(f.readline())$/;"	v
+num_of_edge	offline_2_sssp_online.py	/^        num_of_edge = int(f.readline())$/;"	v
+num_of_tests	offline_2_sssp.py	/^        num_of_tests = num_of_tests - 1$/;"	v
+num_of_tests	offline_2_sssp.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	offline_2_sssp_online.py	/^        num_of_tests = num_of_tests - 1$/;"	v
+num_of_tests	offline_2_sssp_online.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	offline_3_dp.py	/^        num_of_tests = num_of_tests - 1$/;"	v
+num_of_tests	offline_3_dp.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	offline_3_dp_online.py	/^        num_of_tests = num_of_tests - 1$/;"	v
+num_of_tests	offline_3_dp_online.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	offline_5_dnc.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_vert	FLOW_A2.py	/^    num_of_vert = int(f.readline())$/;"	v
+num_of_vert	ST  FLOW A1.py	/^    num_of_vert = int(f.readline())$/;"	v
+num_of_vert	ST  FLOW B1.py	/^    num_of_vert, num_of_edge = int(parts[0]), int(parts[1])$/;"	v
+num_of_vert	offline_1_mst.py	/^    num_of_vert = int(f.readline())$/;"	v
+num_of_vert	offline_1_mst_online.py	/^    num_of_vert = int(f.readline())$/;"	v
+num_of_vert	offline_2_sssp.py	/^        num_of_vert = int(f.readline())$/;"	v
+num_of_vert	offline_2_sssp_online.py	/^        num_of_vert = int(f.readline())$/;"	v
+parts	ST  FLOW B1.py	/^    parts = f.readline().rstrip().split(" ")$/;"	v
+prim	offline_1_mst.py	/^def prim(graph):$/;"	f
+prim	offline_1_mst_online.py	/^def prim(graph):$/;"	f
+print_matrix	offline_3_dp.py	/^def print_matrix(matrix):$/;"	f
+print_matrix	offline_3_dp_online.py	/^def print_matrix(matrix):$/;"	f
+project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
+rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
+rows	offline_3_dp.py	/^        rows = len(seq1) + 1$/;"	v
+rows	offline_3_dp_online.py	/^        rows = len(seq1) + 1$/;"	v
+s	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
+s	ST  FLOW A1.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert)$/;"	v
+score_matrix	offline_3_dp.py	/^        score_matrix, start_pos = create_score_matrix(rows, cols)$/;"	v
+score_matrix	offline_3_dp_online.py	/^        score_matrix, start_pos = create_score_matrix(rows, cols)$/;"	v
+score_matrix_lcs	offline_3_dp_online.py	/^        score_matrix_lcs, start_pos_lcs = create_score_matrix_lcs(rows, cols)$/;"	v
+seq1	offline_3_dp.py	/^        seq1     = f.readline().rstrip()$/;"	v
+seq1	offline_3_dp_online.py	/^        seq1     = f.readline().rstrip()$/;"	v
+seq1_aligned	offline_3_dp.py	/^        seq1_aligned, seq2_aligned = traceback(score_matrix, start_pos)$/;"	v
+seq1_aligned	offline_3_dp_online.py	/^        seq1_aligned, seq2_aligned = traceback(score_matrix, start_pos)$/;"	v
+seq2	offline_3_dp.py	/^        seq2     = f.readline().rstrip()$/;"	v
+seq2	offline_3_dp_online.py	/^        seq2     = f.readline().rstrip()$/;"	v
+seq2_aligned	offline_3_dp.py	/^        seq1_aligned, seq2_aligned = traceback(score_matrix, start_pos)$/;"	v
+seq2_aligned	offline_3_dp_online.py	/^        seq1_aligned, seq2_aligned = traceback(score_matrix, start_pos)$/;"	v
+set_prefs	.ropeproject/config.py	/^def set_prefs(prefs):$/;"	f
+source	offline_2_sssp.py	/^        source = int(input())$/;"	v
+source	offline_2_sssp_online.py	/^        source = int(input())$/;"	v
+start_pos	offline_3_dp.py	/^        score_matrix, start_pos = create_score_matrix(rows, cols)$/;"	v
+start_pos	offline_3_dp_online.py	/^        score_matrix, start_pos = create_score_matrix(rows, cols)$/;"	v
+start_pos_lcs	offline_3_dp_online.py	/^        score_matrix_lcs, start_pos_lcs = create_score_matrix_lcs(rows, cols)$/;"	v
+sum	offline_1_mst.py	/^    sum = 0$/;"	v
+test_cases	ST  FLOW B1.py	/^    test_cases = f.readline()$/;"	v
+traceback	offline_3_dp.py	/^def traceback(score_matrix, start_pos):$/;"	f
+traceback	offline_3_dp_online.py	/^def traceback(score_matrix, start_pos):$/;"	f
+weights	FLOW_A2.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
+weights	FLOW_A2.py	/^    weights = {}$/;"	v
+weights	ST  FLOW A1.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
+weights	ST  FLOW A1.py	/^    weights = {}$/;"	v
+weights	offline_1_mst.py	/^    mst, weights = prim(graph)$/;"	v
+weights	offline_1_mst_online.py	/^    mst, weights = prim(graph)$/;"	v
