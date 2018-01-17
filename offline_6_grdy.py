@@ -9,13 +9,26 @@ class Node:
         self.right = right
 
     def __str__(self):
-        return str(cargo)
+        return str(self.cargo)
 
-def traverse(node, value):
-    if value< node.cargo:
-        traverse(node.left, value)
-    else:
-        traverse(node.right, value)
+def traverse(node, key, value, code=""):
+    print(node)
+    print(type(node))
+    print(code)
+    code = ""
+    if (type(node)==tuple):
+        print("test")
+        if (node[1]==key):
+            return code
+        else:
+            return
+    elif value< node.cargo:
+        code+("1")
+        traverse(node.left, key, value)
+    elif value> node.cargo:
+        code+("0")
+        traverse(node.right, key, value)
+    return code
 
 
 if __name__ == '__main__':
@@ -30,19 +43,20 @@ if __name__ == '__main__':
             freq_dic[line[0]] = int(line[1])
             freq_q.put((int(line[1]), line[0])) 
         
-        # print(freq_q.queue)
         while(freq_q.qsize()>1):
             left = freq_q.get()
             right = freq_q.get()
             node = Node(left[0]+right[0], left, right)
             freq_q.put((left[0]+right[0], node))
 
-        root = freq_q.get()
+        root = (freq_q.get())[1]
+        # print(root.cargo)
 
 
-        print(freq_dic)
-        for key, value in sorted(freq_dic, key=freq_dic.get, reverse=False):
-            traverse(root, value)
+        # print(freq_dic)
+        # for value in sorted(freq_dic, key=freq_dic.get, reverse=False):
+        for key, value in freq_dic.items():
+            traverse(root, key, value)
 
             
         

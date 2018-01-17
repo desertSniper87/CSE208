@@ -138,7 +138,7 @@ project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
 quicksort	offline_5_dnc.py	/^def quicksort(array, low, high):$/;"	f
 rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
 right	offline_6_grdy.py	/^            right = freq_q.get()$/;"	v
-root	offline_6_grdy.py	/^        root = freq_q.get()$/;"	v
+root	offline_6_grdy.py	/^        root = (freq_q.get())[1]$/;"	v
 rows	offline_3_dp.py	/^        rows = len(seq1) + 1$/;"	v
 rows	offline_3_dp_online.py	/^        rows = len(seq1) + 1$/;"	v
 s	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
@@ -164,7 +164,7 @@ sum	offline_1_mst.py	/^    sum = 0$/;"	v
 test_cases	ST  FLOW B1.py	/^    test_cases = f.readline()$/;"	v
 traceback	offline_3_dp.py	/^def traceback(score_matrix, start_pos):$/;"	f
 traceback	offline_3_dp_online.py	/^def traceback(score_matrix, start_pos):$/;"	f
-traverse	offline_6_grdy.py	/^def traverse(node, value):$/;"	f
+traverse	offline_6_grdy.py	/^def traverse(node, key, value, code=""):$/;"	f
 weights	FLOW_A2.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
 weights	FLOW_A2.py	/^    weights = {}$/;"	v
 weights	ST  FLOW A1.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
