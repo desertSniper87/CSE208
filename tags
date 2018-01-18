@@ -6,8 +6,7 @@
 !_TAG_PROGRAM_URL	https://ctags.io/	/official site/
 !_TAG_PROGRAM_VERSION	0.0.0	/06f9fde0/
 Node	offline_6_grdy.py	/^class Node:$/;"	c
-__init__	offline_6_grdy.py	/^    def __init__(self, cargo, left=None, right=None):$/;"	m	class:Node
-__str__	offline_6_grdy.py	/^    def __str__(self):$/;"	m	class:Node
+__init__	offline_6_grdy.py	/^    def __init__(self, left=None, right=None):$/;"	m	class:Node
 a	Offline_4_BB.py	/^    a,b = greedy_approach(elem)$/;"	v
 alength	offline_3_dp.py	/^        alength = len(seq1_aligned)$/;"	v
 alength	offline_3_dp_online.py	/^        alength = len(seq1_aligned)$/;"	v
@@ -22,6 +21,7 @@ bellman_ford	offline_2_sssp_online.py	/^def bellman_ford(graph, source, num_of_v
 calc_score	offline_3_dp.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score	offline_3_dp_online.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score_lcs	offline_3_dp_online.py	/^def calc_score_lcs(matrix, x, y):$/;"	f
+code_dic	offline_6_grdy.py	/^        code_dic = traverse(root)$/;"	v
 cols	offline_3_dp.py	/^        cols = len(seq2) + 1$/;"	v
 cols	offline_3_dp_online.py	/^        cols = len(seq2) + 1$/;"	v
 cons	FLOW_A2.py	/^    cons = []$/;"	v
@@ -42,7 +42,6 @@ f	offline_3_dp_online.py	/^    f = open('offline_3_input.txt')$/;"	v
 f	offline_5_dnc.py	/^    f = open('offline_5_input.txt')$/;"	v
 f	offline_6_grdy.py	/^    f = open('offline_6_input.txt')$/;"	v
 findquicksort	offline_5_dnc.py	/^def findquicksort(array, high):$/;"	f
-freq_dic	offline_6_grdy.py	/^        freq_dic = {}$/;"	v
 freq_q	offline_6_grdy.py	/^        freq_q = queue.PriorityQueue()$/;"	v
 gap	offline_3_dp.py	/^        gap      = int(line[4])$/;"	v
 gap	offline_3_dp_online.py	/^        gap      = int(line[4])$/;"	v
@@ -102,7 +101,7 @@ n	offline_5_dnc.py	/^        n = int(f.readline())$/;"	v
 n	offline_6_grdy.py	/^        n = int(f.readline())$/;"	v
 next_move	offline_3_dp.py	/^def next_move(score_matrix, x, y):$/;"	f
 next_move	offline_3_dp_online.py	/^def next_move(score_matrix, x, y):$/;"	f
-node	offline_6_grdy.py	/^            node = Node(left[0]+right[0], left, right)$/;"	v
+node	offline_6_grdy.py	/^            node = Node(left, right)$/;"	v
 num_of_cons	FLOW_A2.py	/^    num_of_cons = int(f.readline())$/;"	v
 num_of_edge	FLOW_A2.py	/^    num_of_edge = int(f.readline())$/;"	v
 num_of_edge	ST  FLOW A1.py	/^    num_of_edge = int(f.readline())$/;"	v
@@ -138,7 +137,7 @@ project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
 quicksort	offline_5_dnc.py	/^def quicksort(array, low, high):$/;"	f
 rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
 right	offline_6_grdy.py	/^            right = freq_q.get()$/;"	v
-root	offline_6_grdy.py	/^        root = (freq_q.get())[1]$/;"	v
+root	offline_6_grdy.py	/^        root = (freq_q.get())$/;"	v
 rows	offline_3_dp.py	/^        rows = len(seq1) + 1$/;"	v
 rows	offline_3_dp_online.py	/^        rows = len(seq1) + 1$/;"	v
 s	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
@@ -164,7 +163,7 @@ sum	offline_1_mst.py	/^    sum = 0$/;"	v
 test_cases	ST  FLOW B1.py	/^    test_cases = f.readline()$/;"	v
 traceback	offline_3_dp.py	/^def traceback(score_matrix, start_pos):$/;"	f
 traceback	offline_3_dp_online.py	/^def traceback(score_matrix, start_pos):$/;"	f
-traverse	offline_6_grdy.py	/^def traverse(node, key, value, code=""):$/;"	f
+traverse	offline_6_grdy.py	/^def traverse(node, prefix="", code={}):$/;"	f
 weights	FLOW_A2.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
 weights	FLOW_A2.py	/^    weights = {}$/;"	v
 weights	ST  FLOW A1.py	/^    weights = sorted(weights.items(), key = operator.itemgetter(1), reverse=False)$/;"	v
