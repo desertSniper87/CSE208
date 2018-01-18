@@ -21,8 +21,12 @@ bellman_ford	offline_2_sssp_online.py	/^def bellman_ford(graph, source, num_of_v
 calc_score	offline_3_dp.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score	offline_3_dp_online.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score_lcs	offline_3_dp_online.py	/^def calc_score_lcs(matrix, x, y):$/;"	f
+change	offline_6_grdy_b1.py	/^                change = change - i$/;"	v
+change	offline_6_grdy_b1.py	/^        change = int(f.readline().rstrip())$/;"	v
 code_dic	offline_6_grdy.py	/^        code_dic = traverse(root)$/;"	v
-code_dic	offline_6_grdy_b1.py	/^        code_dic = traverse(root)$/;"	v
+coin_value_dict	offline_6_grdy_b1.py	/^        coin_value_dict = {}$/;"	v
+coin_value_list	offline_6_grdy_b1.py	/^        coin_value_list = []$/;"	v
+coin_value_list	offline_6_grdy_b1.py	/^        coin_value_list = sorted(coin_value_list, reverse=True)$/;"	v
 cols	offline_3_dp.py	/^        cols = len(seq2) + 1$/;"	v
 cols	offline_3_dp_online.py	/^        cols = len(seq2) + 1$/;"	v
 cons	FLOW_A2.py	/^    cons = []$/;"	v
@@ -42,10 +46,9 @@ f	offline_3_dp.py	/^    f = open('offline_3_input.txt')$/;"	v
 f	offline_3_dp_online.py	/^    f = open('offline_3_input.txt')$/;"	v
 f	offline_5_dnc.py	/^    f = open('offline_5_input.txt')$/;"	v
 f	offline_6_grdy.py	/^    f = open('offline_6_input.txt')$/;"	v
-f	offline_6_grdy_b1.py	/^    f = open('offline_6_input.txt')$/;"	v
+f	offline_6_grdy_b1.py	/^    f = open('offline_6_b1_input.txt')$/;"	v
 findquicksort	offline_5_dnc.py	/^def findquicksort(array, high):$/;"	f
 freq_q	offline_6_grdy.py	/^        freq_q = queue.PriorityQueue()$/;"	v
-freq_q	offline_6_grdy_b1.py	/^        freq_q = queue.PriorityQueue()$/;"	v
 gap	offline_3_dp.py	/^        gap      = int(line[4])$/;"	v
 gap	offline_3_dp_online.py	/^        gap      = int(line[4])$/;"	v
 gaps	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
@@ -71,7 +74,6 @@ l	Offline_4_BB.py	/^        l = line.rstrip().split(" ")$/;"	v
 l	Offline_4_BB.py	/^    l = line.rstrip().split(" ")$/;"	v
 lcs	offline_3_dp_online.py	/^def lcs(matrix, start_pos):$/;"	f
 left	offline_6_grdy.py	/^            left = freq_q.get()$/;"	v
-left	offline_6_grdy_b1.py	/^            left = freq_q.get()$/;"	v
 line	FLOW_A2.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	Offline_4_BB.py	/^    line = f.readline()$/;"	v
 line	ST  FLOW A1.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
@@ -83,7 +85,7 @@ line	offline_3_dp.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_3_dp_online.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_5_dnc.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_6_grdy.py	/^            line = f.readline().rstrip().split(" ")$/;"	v
-line	offline_6_grdy_b1.py	/^            line = f.readline().rstrip().split(" ")$/;"	v
+line	offline_6_grdy_b1.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 m	Offline_4_BB.py	/^    m = int(l[1])$/;"	v
 match	offline_3_dp.py	/^        match    = int(line[2])$/;"	v
 match	offline_3_dp_online.py	/^        match    = int(line[2])$/;"	v
@@ -108,7 +110,6 @@ n	offline_6_grdy_b1.py	/^        n = int(f.readline())$/;"	v
 next_move	offline_3_dp.py	/^def next_move(score_matrix, x, y):$/;"	f
 next_move	offline_3_dp_online.py	/^def next_move(score_matrix, x, y):$/;"	f
 node	offline_6_grdy.py	/^            node = Node(left, right)$/;"	v
-node	offline_6_grdy_b1.py	/^            node = Node(left, right)$/;"	v
 num_of_cons	FLOW_A2.py	/^    num_of_cons = int(f.readline())$/;"	v
 num_of_edge	FLOW_A2.py	/^    num_of_edge = int(f.readline())$/;"	v
 num_of_edge	ST  FLOW A1.py	/^    num_of_edge = int(f.readline())$/;"	v
@@ -145,9 +146,7 @@ project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
 quicksort	offline_5_dnc.py	/^def quicksort(array, low, high):$/;"	f
 rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
 right	offline_6_grdy.py	/^            right = freq_q.get()$/;"	v
-right	offline_6_grdy_b1.py	/^            right = freq_q.get()$/;"	v
 root	offline_6_grdy.py	/^        root = (freq_q.get())$/;"	v
-root	offline_6_grdy_b1.py	/^        root = (freq_q.get())$/;"	v
 rows	offline_3_dp.py	/^        rows = len(seq1) + 1$/;"	v
 rows	offline_3_dp_online.py	/^        rows = len(seq1) + 1$/;"	v
 s	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	v
