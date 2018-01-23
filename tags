@@ -14,12 +14,16 @@ alignment_str	offline_3_dp.py	/^        alignment_str, idents, gaps, mismatches 
 alignment_str	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mismatches = alignment_string(seq1_aligned, seq2_aligned)$/;"	v
 alignment_string	offline_3_dp.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
 alignment_string	offline_3_dp_online.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
+alignment_string	online_dp.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
 array	offline_5_dnc.py	/^        array = []$/;"	v
+array	online_dnc.py	/^        array = []$/;"	v
+array	online_dp.py	/^        array = []$/;"	v
 b	offline_8_bb.py	/^    a,b = greedy_approach(elem)$/;"	v
 bellman_ford	offline_2_sssp.py	/^def bellman_ford(graph, source, num_of_vert, num_of_edge):$/;"	f
 bellman_ford	offline_2_sssp_online.py	/^def bellman_ford(graph, source, num_of_vert, num_of_edge):$/;"	f
 calc_score	offline_3_dp.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score	offline_3_dp_online.py	/^def calc_score(matrix, x, y):$/;"	f
+calc_score	online_dp.py	/^def calc_score(matrix, x, y):$/;"	f
 calc_score_lcs	offline_3_dp_online.py	/^def calc_score_lcs(matrix, x, y):$/;"	f
 change	offline_6_grdy_b1.py	/^                change = change - i$/;"	v
 change	offline_6_grdy_b1.py	/^        change = int(f.readline().rstrip())$/;"	v
@@ -32,6 +36,7 @@ cols	offline_3_dp_online.py	/^        cols = len(seq2) + 1$/;"	v
 cons	FLOW_A2.py	/^    cons = []$/;"	v
 create_score_matrix	offline_3_dp.py	/^def create_score_matrix(rows, cols):$/;"	f
 create_score_matrix	offline_3_dp_online.py	/^def create_score_matrix(rows, cols):$/;"	f
+create_score_matrix	online_dp.py	/^def create_score_matrix(rows, cols):$/;"	f
 create_score_matrix_lcs	offline_3_dp_online.py	/^def create_score_matrix_lcs(rows, cols):$/;"	f
 elem	offline_8_bb.py	/^    elem = defaultdict(list)$/;"	v
 f	FLOW_A2.py	/^    f = open('FLOW_A2_INPUT.txt')$/;"	v
@@ -47,7 +52,10 @@ f	offline_5_dnc.py	/^    f = open('offline_5_input.txt')$/;"	v
 f	offline_6_grdy.py	/^    f = open('offline_6_input.txt')$/;"	v
 f	offline_6_grdy_b1.py	/^    f = open('offline_6_b1_input.txt')$/;"	v
 f	offline_8_bb.py	/^    f = open('offline_4_input.txt')$/;"	v
+f	online_dnc.py	/^    f = open('online_dnc_input.txt')$/;"	v
+f	online_dp.py	/^    f = open('online_dp_input.txt')$/;"	v
 f	practice_greedy_knapsack.py	/^    f = open('practice_greedy_knapsack_input.txt')$/;"	v
+find_dup	online_dnc.py	/^def find_dup(array):$/;"	f
 findquicksort	offline_5_dnc.py	/^def findquicksort(array, high):$/;"	f
 freq_q	offline_6_grdy.py	/^        freq_q = queue.PriorityQueue()$/;"	v
 gap	offline_3_dp.py	/^        gap      = int(line[4])$/;"	v
@@ -87,10 +95,13 @@ line	offline_5_dnc.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_6_grdy.py	/^            line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_6_grdy_b1.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	offline_8_bb.py	/^    line = f.readline()$/;"	v
+line	online_dnc.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
+line	online_dp.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	practice_greedy_knapsack.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 m	offline_8_bb.py	/^    m = int(l[1])$/;"	v
 match	offline_3_dp.py	/^        match    = int(line[2])$/;"	v
 match	offline_3_dp_online.py	/^        match    = int(line[2])$/;"	v
+matrix	online_dp.py	/^        matrix = [[0 for col in range(n)] for row in range(n)]$/;"	v
 max_weight	practice_greedy_knapsack.py	/^                max_weight = max_weight - w$/;"	v
 max_weight	practice_greedy_knapsack.py	/^        max_weight = int(f.readline())$/;"	v
 median	offline_5_dnc.py	/^        median = array.index(median[0])$/;"	v
@@ -111,9 +122,12 @@ n	offline_5_dnc.py	/^        n = int(f.readline())$/;"	v
 n	offline_6_grdy.py	/^        n = int(f.readline())$/;"	v
 n	offline_6_grdy_b1.py	/^        n = int(f.readline())$/;"	v
 n	offline_8_bb.py	/^    n = int(l[0])$/;"	v
+n	online_dnc.py	/^        n = int(f.readline())$/;"	v
+n	online_dp.py	/^        n = int(f.readline().rstrip())$/;"	v
 n	practice_greedy_knapsack.py	/^        n = int(f.readline())$/;"	v
 next_move	offline_3_dp.py	/^def next_move(score_matrix, x, y):$/;"	f
 next_move	offline_3_dp_online.py	/^def next_move(score_matrix, x, y):$/;"	f
+next_move	online_dp.py	/^def next_move(score_matrix, x, y):$/;"	f
 node	offline_6_grdy.py	/^            node = Node(left, right)$/;"	v
 num_of_cons	FLOW_A2.py	/^    num_of_cons = int(f.readline())$/;"	v
 num_of_edge	FLOW_A2.py	/^    num_of_edge = int(f.readline())$/;"	v
@@ -134,6 +148,9 @@ num_of_tests	offline_3_dp_online.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	offline_5_dnc.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	offline_6_grdy.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	offline_6_grdy_b1.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	online_dnc.py	/^    num_of_tests = int(f.readline())$/;"	v
+num_of_tests	online_dp.py	/^        num_of_tests = num_of_tests - 1$/;"	v
+num_of_tests	online_dp.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	practice_greedy_knapsack.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_vert	FLOW_A2.py	/^    num_of_vert = int(f.readline())$/;"	v
 num_of_vert	ST  FLOW A1.py	/^    num_of_vert = int(f.readline())$/;"	v
@@ -148,6 +165,7 @@ prim	offline_1_mst.py	/^def prim(graph):$/;"	f
 prim	offline_1_mst_online.py	/^def prim(graph):$/;"	f
 print_matrix	offline_3_dp.py	/^def print_matrix(matrix):$/;"	f
 print_matrix	offline_3_dp_online.py	/^def print_matrix(matrix):$/;"	f
+print_matrix	online_dp.py	/^def print_matrix(matrix):$/;"	f
 project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
 quicksort	offline_5_dnc.py	/^def quicksort(array, low, high):$/;"	f
 rand_median	offline_5_dnc.py	/^def rand_median(array):$/;"	f
@@ -176,9 +194,11 @@ start_pos	offline_3_dp.py	/^        score_matrix, start_pos = create_score_matri
 start_pos	offline_3_dp_online.py	/^        score_matrix, start_pos = create_score_matrix(rows, cols)$/;"	v
 start_pos_lcs	offline_3_dp_online.py	/^        score_matrix_lcs, start_pos_lcs = create_score_matrix_lcs(rows, cols)$/;"	v
 sum	offline_1_mst.py	/^    sum = 0$/;"	v
+target	online_dp.py	/^        target = int(f.readline().rstrip())$/;"	v
 test_cases	ST  FLOW B1.py	/^    test_cases = f.readline()$/;"	v
 traceback	offline_3_dp.py	/^def traceback(score_matrix, start_pos):$/;"	f
 traceback	offline_3_dp_online.py	/^def traceback(score_matrix, start_pos):$/;"	f
+traceback	online_dp.py	/^def traceback(score_matrix, start_pos):$/;"	f
 traverse	offline_6_grdy.py	/^def traverse(node, prefix="", code={}):$/;"	f
 value	practice_greedy_knapsack.py	/^        value = {}$/;"	v
 vpw	practice_greedy_knapsack.py	/^        vpw = {}$/;"	v
@@ -190,3 +210,4 @@ weights	ST  FLOW A1.py	/^    weights = sorted(weights.items(), key = operator.it
 weights	ST  FLOW A1.py	/^    weights = {}$/;"	v
 weights	offline_1_mst.py	/^    mst, weights = prim(graph)$/;"	v
 weights	offline_1_mst_online.py	/^    mst, weights = prim(graph)$/;"	v
+x	online_dnc.py	/^        x = find_dup(array)$/;"	v

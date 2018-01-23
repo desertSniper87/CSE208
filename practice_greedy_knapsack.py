@@ -20,23 +20,24 @@ if __name__ == '__main__':
             vpw[i] = value[i]/weight[i]
 
         max_weight = int(f.readline())
-        # print(vpw)
+        print(vpw)
 
         for i in sorted(vpw, reverse=False):
             if (max_weight>0):
-                # print("max_weight", max_weight)
-                # print("weight[i]", weight[i])
+                print("max_weight", max_weight)
+                print("weight[i]", weight[i])
+                print("value[i]", value[i])
                 # w = weight[i] % max_weight
                 if weight[i] > max_weight:
                     w = weight[i] - max_weight;
                 else:
                     w = weight[i]
-                # print("w", w)
+                print("w", w)
                 max_weight = max_weight - w
                 result[i] = w
-                # print("max_weight", max_weight)
+                print("max_weight", max_weight)
             # print (vpw[i])
-        print(result)
+            print(result)
             
 
 
