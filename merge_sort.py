@@ -12,21 +12,20 @@ import math
 
     # print(p, q, r)
 
-def merge(array):
+def merge_sort(array):
     if len(array)==1:
         return array
     p = 0
     r = len(array)
     q = math.floor((p+r)/2)
 
-    left = merge(array[:q])
-    right = merge(array[q:])
+    left = merge_sort(array[:q])
+    right = merge_sort(array[q:])
 
     res = []
     print("left, right: ", left, right)
-    # for i in left:
-        # for j in right:
     i, j = 0, 0
+
     while(i<len(left) and j<len(right)):
         if left[i]>right[j]:
             res.append(right[j])
@@ -42,7 +41,7 @@ def merge(array):
             
     # res.extend(left)
     # res.extend(right)
-    print("left, right: ", left, right)
+    # print("left, right: ", left, right)
 
     print("res: ", res)
     return res
@@ -61,7 +60,6 @@ if __name__ == '__main__':
 
     f = open('merge_sort_input.txt')
     num_of_tests = int(f.readline())
-    # print(num_of_tests)
     for _ in range(num_of_tests):
         n = int(f.readline())
         line = f.readline().rstrip().split(" ")
@@ -69,5 +67,9 @@ if __name__ == '__main__':
         for i in line:
             array.append(int(i))
 
-        merge(array)
+        print("Doing merge sort on array:")
+        print(array)
+        print()
+        merge_sort(array)
+        print ("-"*40)
 
