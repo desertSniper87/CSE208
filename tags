@@ -15,6 +15,7 @@ alignment_str	offline_3_dp_online.py	/^        alignment_str, idents, gaps, mism
 alignment_string	offline_3_dp.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
 alignment_string	offline_3_dp_online.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
 alignment_string	online_dp.py	/^def alignment_string(aligned_seq1, aligned_seq2):$/;"	f
+array	:term python merge_sort.py	/^        array = []$/;"	v
 array	merge_sort.py	/^        array = []$/;"	v
 array	offline_5_dnc.py	/^        array = []$/;"	v
 array	online_dnc.py	/^        array = []$/;"	v
@@ -40,6 +41,7 @@ create_score_matrix	offline_3_dp_online.py	/^def create_score_matrix(rows, cols)
 create_score_matrix	online_dp.py	/^def create_score_matrix(rows, cols):$/;"	f
 create_score_matrix_lcs	offline_3_dp_online.py	/^def create_score_matrix_lcs(rows, cols):$/;"	f
 elem	offline_8_bb.py	/^    elem = defaultdict(list)$/;"	v
+f	:term python merge_sort.py	/^    f = open('merge_sort_input.txt')$/;"	v
 f	FLOW_A2.py	/^    f = open('FLOW_A2_INPUT.txt')$/;"	v
 f	ST  FLOW A1.py	/^    f = open('ST  FLOW A1.input.txt')$/;"	v
 f	ST  FLOW B1.py	/^    f = open('ST  FLOW A1.input.txt')$/;"	v
@@ -85,6 +87,7 @@ l	offline_8_bb.py	/^        l = line.rstrip().split(" ")$/;"	v
 l	offline_8_bb.py	/^    l = line.rstrip().split(" ")$/;"	v
 lcs	offline_3_dp_online.py	/^def lcs(matrix, start_pos):$/;"	f
 left	offline_6_grdy.py	/^            left = freq_q.get()$/;"	v
+line	:term python merge_sort.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	FLOW_A2.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	ST  FLOW A1.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
 line	merge_sort.py	/^        line = f.readline().rstrip().split(" ")$/;"	v
@@ -109,6 +112,7 @@ max_weight	practice_greedy_knapsack.py	/^                max_weight = max_weight
 max_weight	practice_greedy_knapsack.py	/^        max_weight = int(f.readline())$/;"	v
 median	offline_5_dnc.py	/^        median = array.index(median[0])$/;"	v
 median	offline_5_dnc.py	/^        median = rand_median(array)$/;"	v
+merge	:term python merge_sort.py	/^def merge(array):$/;"	f
 merge_sort	merge_sort.py	/^def merge_sort(array):$/;"	f
 min_edge	offline_2_sssp_online.py	/^                        min_edge = graph[u][v]$/;"	v
 min_edge	offline_2_sssp_online.py	/^            min_edge = 9999$/;"	v
@@ -122,6 +126,7 @@ mst	FLOW_A2.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert, cons)$/;"	
 mst	ST  FLOW A1.py	/^        mst, s = kruskal_sbmst(weights, num_of_vert)$/;"	v
 mst	offline_1_mst.py	/^    mst, weights = prim(graph)$/;"	v
 mst	offline_1_mst_online.py	/^    mst, weights = prim(graph)$/;"	v
+n	:term python merge_sort.py	/^        n = int(f.readline())$/;"	v
 n	merge_sort.py	/^        n = int(f.readline())$/;"	v
 n	offline_5_dnc.py	/^        n = int(f.readline())$/;"	v
 n	offline_6_grdy.py	/^        n = int(f.readline())$/;"	v
@@ -142,6 +147,7 @@ num_of_edge	offline_1_mst.py	/^    num_of_edge = int(f.readline())$/;"	v
 num_of_edge	offline_1_mst_online.py	/^    num_of_edge = int(f.readline())$/;"	v
 num_of_edge	offline_2_sssp.py	/^        num_of_edge = int(f.readline())$/;"	v
 num_of_edge	offline_2_sssp_online.py	/^        num_of_edge = int(f.readline())$/;"	v
+num_of_tests	:term python merge_sort.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	merge_sort.py	/^    num_of_tests = int(f.readline())$/;"	v
 num_of_tests	offline_2_sssp.py	/^        num_of_tests = num_of_tests - 1$/;"	v
 num_of_tests	offline_2_sssp.py	/^    num_of_tests = int(f.readline())$/;"	v
