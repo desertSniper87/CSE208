@@ -1,11 +1,11 @@
-#CSE-208(Algorithm Sessional)
+# CSE-208(Algorithm Sessional)
 These are the source of algorithm sessional that I flunked in 2nd year
 
-##How to run
+## How to run
 All codes in python which takes input from file and outputs them in txt.
 
-###Contents
-/#   | Content                                        | Filename                      |
+### Contents
+N    | Content                                        | Filename                      |
 ---- | :--------------------------                    | :---------------------------- |
 1    | Minimum Spanning Tree(Prims algo)              | (offline_1_mst.py)[]          |
 2    | Single Source Shortest Path(Bellman-ford Algo) | (offline_2_sssp.py)[]         |
